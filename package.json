@@ -1,5 +1,5 @@
 {
-  "name": "amis",
+  "name": "amis-qk",
   "version": "1.6.4",
   "description": "一种MIS页面生成工具",
   "main": "lib/index.js",
