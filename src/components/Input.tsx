@@ -48,7 +48,7 @@ class InputInner extends React.Component<InputProps, InputState> {
   }
 
   render() {
-    const {forwardedRef, ...rest} = this.props;
+    let {forwardedRef, ...rest} = this.props;
 
     return (
       <input

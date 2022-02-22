@@ -648,9 +648,9 @@ export default class TextControl extends React.PureComponent<
                     onFocus: this.handleFocus,
                     onBlur: this.handleBlur,
                     onChange: this.handleInputChange,
-                    onKeyDown: this.handleKeyDown,
+                    onKeyDown: this.handleKeyDown
                   })}
-                  maxlength={this.props.maxLength || ''}
+                  maxLength={this.props.maxLength}
                   autoComplete="off"
                   size={10}
                 />
@@ -771,7 +771,7 @@ export default class TextControl extends React.PureComponent<
           step={step}
           onChange={this.handleNormalInputChange}
           value={this.valueToString(value)}
-          maxlength={maxLength || ''}
+          maxLength={maxLength}
         />
         {clearable && !disabled && value ? (
           <a onClick={this.clearValue} className={`${ns}TextControl-clear`}>
